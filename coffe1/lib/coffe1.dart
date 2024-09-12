@@ -122,7 +122,60 @@ class Coffe1Example extends StatelessWidget{
             },
           ),
                             
-                            Text("2" ,style: TextStyle(color: Colors.white),),
+                            SizedBox(height: 20,),
+                            Text('-----------------------------------------------------',style:   TextStyle(color: Colors.white),),
+                            Container(
+                              height: 50,
+                              width: double.infinity,
+                              color: Colors.brown,
+                              child: Padding(padding: EdgeInsets.all(15),
+                              child: Row(
+                                children: [
+                                  Text('Apply Coupon Code',style: TextStyle(fontSize: 15,color: Colors.white),),
+                                  Spacer(),
+                                  Icon(Icons.arrow_back,color: Colors.white,),
+                                ],
+                              ),),
+                            ),
+
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                Text('Delivery Charges',style: TextStyle(fontSize: 15,color: Colors.white),
+                                ),
+                                Spacer(),
+                                Icon(Icons.currency_rupee,color: Colors.white,size: 15),
+                                Text('49',style: TextStyle(fontSize: 15,color: Colors.white),
+                                )
+                              ],
+                            ),
+                          
+                          Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                Text('Taxes',style: TextStyle(fontSize: 15,color: Colors.white),
+                                ),
+                                Spacer(),
+                                Icon(Icons.currency_rupee,color: Colors.white,size: 15),
+                                Text('49',style: TextStyle(fontSize: 15,color: Colors.white),
+                                )
+                              ],
+                            ),
+                          
+                          Text('---------------------------------------------',style: TextStyle(color: Colors.white),),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Text('Grand Total',style: TextStyle(fontSize: 20,color: Colors.white),),
+                              Spacer(),
+                              Icon(Icons.currency_rupee,color: Colors.white,size: 15,),
+                              
+                            ],
+                          ),
+                          
+                          
+                          
+                          
                           ],
                         ),
                       ),
